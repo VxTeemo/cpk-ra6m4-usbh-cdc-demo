@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="ilg.gnumcueclipse.debug.gdbjtag.jlink.launchConfigurationType">
 <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.adapterName" value="J-Link"/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.binFileStartAddress" value=""/>
 <booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.doConnectToRunning" value="false"/>
 <booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.doContinue" value="true"/>
 <booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.doDebugInRam" value="false"/>
@@ -18,10 +19,14 @@
 <booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.enableSemihostingIoclientGdbClient" value="false"/>
 <booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.enableSemihostingIoclientTelnet" value="true"/>
 <booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.enableSwo" value="false"/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.eraseEndAddress" value=""/>
+<intAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.eraseMode" value="0"/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.eraseStartAddress" value=""/>
 <intAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.firstResetSpeed" value="1000"/>
 <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.firstResetType" value=""/>
 <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.flashDeviceName" value="unknown"/>
 <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.flashDownloadHex" value="true"/>
+<booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.forceQuitGdbServer" value="false"/>
 <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.gdbClientOtherCommands" value="set mem inaccessible-by-default off"/>
 <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.gdbClientOtherOptions" value=""/>
 <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.gdbServerConnection" value="usb"/>
@@ -29,8 +34,8 @@
 <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.gdbServerDebugInterface" value="swd"/>
 <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.gdbServerDeviceEndianness" value="little"/>
 <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.gdbServerDeviceName" value="R7FA6M4AF"/>
-<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.gdbServerDeviceSpeed" value="4000"/>
-<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.gdbServerExecutable" value="${studio_install_path}/repo/Extract/Debugger_Support_Packages/SEGGER/J-Link/v7.50a/JLinkGDBServerCL.exe"/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.gdbServerDeviceSpeed" value="auto"/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.gdbServerExecutable" value="${studio_install_path}/repo/Extract/Debugger_Support_Packages/SEGGER/J-Link/6.80d2/JLinkGDBServerCL.exe"/>
 <intAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.gdbServerGdbPortNumber" value="2331"/>
 <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.gdbServerLog" value=""/>
 <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.gdbServerOther" value="-singlerun"/>
@@ -38,9 +43,10 @@
 <intAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.gdbServerSwoPortNumber" value="2332"/>
 <intAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.gdbServerTelnetPortNumber" value="2333"/>
 <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.interfaceSpeed" value="auto"/>
-<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.jlinkExecutable" value="${studio_install_path}/repo/Extract/Debugger_Support_Packages/SEGGER/J-Link/v7.50a/JLink.exe"/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.jlinkExecutable" value="${studio_install_path}/repo/Extract/Debugger_Support_Packages/SEGGER/J-Link/6.80d2/JLink.exe"/>
 <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.otherInitCommands" value=""/>
 <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.otherRunCommands" value=""/>
+<booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.runAfterDownload" value="true"/>
 <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.secondResetType" value=""/>
 <intAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.swoEnableTargetCpuFreq" value="0"/>
 <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.swoEnableTargetPortMask" value="0x1"/>
