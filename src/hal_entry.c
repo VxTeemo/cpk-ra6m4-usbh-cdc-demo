@@ -16,10 +16,12 @@
 #define LED3_PIN    BSP_IO_PORT_01_PIN_06
 #define USER_INPUT  "P105"
 
+void usb_basic_example (void);
+
 void hal_entry(void)
 {
     rt_kprintf("\nHello RT-Thread!\n");
-
+    usb_basic_example();
     while (1)
     {
         rt_pin_write(LED3_PIN, PIN_HIGH);
