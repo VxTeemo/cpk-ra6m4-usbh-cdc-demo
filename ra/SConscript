@@ -15,6 +15,9 @@ elif rtconfig.PLATFORM == 'gcc':
     src += [cwd + '/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.c']
     src += [cwd + '/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.c']
     src += Glob(cwd + '/fsp/src/r_*/*.c')
+    src += Glob(cwd + '/fsp/src/r_usb_basic/src/hw/*.c')
+    src += Glob(cwd + '/fsp/src/r_usb_basic/src/driver/*.c')
+    src += Glob(cwd + '/fsp/src/r_usb_pcdc/src/*.c')
     CPPPATH = [ cwd + '/arm/CMSIS_5/CMSIS/Core/Include',
                 cwd + '/fsp/inc',
                 cwd + '/fsp/inc/api',

@@ -5,7 +5,7 @@
 extern const uint16_t NULL[];
 #endif
 
-            #if (1 != RA_NOT_DEFINED)
+            #if (RA_NOT_DEFINED != RA_NOT_DEFINED)
             #define USB_CFG_HCDC_USE
             #endif
             #if (RA_NOT_DEFINED != RA_NOT_DEFINED)
@@ -17,7 +17,7 @@ extern const uint16_t NULL[];
             #if (RA_NOT_DEFINED != RA_NOT_DEFINED)
             #define USB_CFG_HVND_USE
             #endif
-            #if (RA_NOT_DEFINED != RA_NOT_DEFINED)
+            #if (1 != RA_NOT_DEFINED)
             #define USB_CFG_PCDC_USE
             #endif
             #if (RA_NOT_DEFINED != RA_NOT_DEFINED)

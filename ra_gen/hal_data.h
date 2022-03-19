@@ -6,7 +6,7 @@
 #include "common_data.h"
 #include "r_usb_basic.h"
 #include "r_usb_basic_api.h"
-#include "r_usb_hcdc_api.h"
+#include "r_usb_pcdc_api.h"
 #include "r_icu.h"
 #include "r_external_irq_api.h"
 #include "r_sci_uart.h"

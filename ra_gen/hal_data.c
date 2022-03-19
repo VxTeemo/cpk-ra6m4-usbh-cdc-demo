@@ -2,20 +2,20 @@
 #include "hal_data.h"
 usb_instance_ctrl_t g_basic0_ctrl;
 
-#if !defined(NULL)
-extern usb_descriptor_t NULL;
+#if !defined(g_usb_descriptor)
+extern usb_descriptor_t g_usb_descriptor;
 #endif
 #define RA_NOT_DEFINED (1)
             const usb_cfg_t g_basic0_cfg =
             {
-                .usb_mode  = USB_MODE_HOST,
+                .usb_mode  = USB_MODE_PERI,
                 .usb_speed = USB_SPEED_FS,
                 .module_number = 0,
-                .type = USB_CLASS_HCDC,
-#if defined(NULL)
-                .p_usb_reg = NULL,
+                .type = USB_CLASS_PCDC,
+#if defined(g_usb_descriptor)
+                .p_usb_reg = g_usb_descriptor,
 #else
-                .p_usb_reg = &NULL,
+                .p_usb_reg = &g_usb_descriptor,
 #endif
                 .usb_complience_cb = NULL,
 #if defined(VECTOR_NUMBER_USBFS_INT)
