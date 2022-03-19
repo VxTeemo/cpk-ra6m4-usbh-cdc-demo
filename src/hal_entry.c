@@ -16,12 +16,16 @@
 #define LED3_PIN    BSP_IO_PORT_01_PIN_06
 #define USER_INPUT  "P105"
 
-void usb_basic_example (void);
+int thread_sample_init();
+void send_msg(int argc, char**argv);
+void icu_sample(void);
 
 void hal_entry(void)
 {
     rt_kprintf("\nHello RT-Thread!\n");
-    usb_basic_example();
+    thread_sample_init();
+    icu_sample();
+
     while (1)
     {
         rt_pin_write(LED3_PIN, PIN_HIGH);
@@ -30,10 +34,21 @@ void hal_entry(void)
         rt_thread_mdelay(500);
     }
 }
-
+#include <stdio.h>
 void irq_callback_test(void *args)
 {
-    rt_kprintf("\n IRQ00 triggered \n");
+    char *cmdd[2];
+    char **cmd = cmdd;
+    static int send_count = 0;
+    char cmd_name[] = "send_msg";
+    static char send[30] = "hello usb cdc";
+
+    cmdd[0] = cmd_name;
+    cmdd[1] = send;
+
+    sprintf(send,  "hello usb cdc %4d", send_count++);
+
+    send_msg(2, cmd);
 }
 
 void icu_sample(void)
