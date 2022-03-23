@@ -695,7 +695,7 @@ void usb_hcdc_class_check (usb_utr_t * ptr, uint16_t ** table)
         err = USB_SND_MSG(USB_HCDC_MBX, (usb_msg_t *) cp);
         if (USB_OK != err)
         {
-            USB_PRINTF1("Host Sample snd_msg error %x\n", err);
+            USB_PRINTF1("Host Sample snd_msg error %lx\n", err);
         }
     }
     else

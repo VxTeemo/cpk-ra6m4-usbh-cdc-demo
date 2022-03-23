@@ -81,4 +81,5 @@ extern const uint16_t NULL[];
             #define USB_CFG_TPL USB_NOVENDOR, USB_NOPRODUCT
             #define USB_CFG_TPL_TABLE NULL
             #define USB_CFG_COMPLIANCE (USB_CFG_DISABLE)
+            #define USB_DEBUG_ON
 #endif /* R_USB_BASIC_CFG_H_ */
