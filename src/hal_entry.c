@@ -19,10 +19,17 @@
 int thread_sample_init();
 void send_msg(int argc, char**argv);
 void icu_sample(void);
+extern int usbh_initialize(void);
+extern int cdc_acm_test(void);
 
 void hal_entry(void)
 {
     rt_kprintf("\nHello RT-Thread!\n");
+    usbh_initialize();
+    rt_kprintf("usbh_initialize\n");
+    cdc_acm_test();
+    rt_kprintf("cdc_acm_test\n");
+
     thread_sample_init();
     icu_sample();
 

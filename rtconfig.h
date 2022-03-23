@@ -168,6 +168,10 @@
 /* u8g2: a monochrome graphic library */
 
 /* end of u8g2: a monochrome graphic library */
+
+/* PainterEngine: A cross-platform graphics application framework written in C language */
+
+/* end of PainterEngine: A cross-platform graphics application framework written in C language */
 /* end of multimedia packages */
 
 /* tools packages */
@@ -175,6 +179,14 @@
 /* end of tools packages */
 
 /* system packages */
+
+/* enhanced kernel services */
+
+/* end of enhanced kernel services */
+
+/* POSIX extension functions */
+
+/* end of POSIX extension functions */
 
 /* acceleration: Assembly language or algorithmic acceleration packages */
 
@@ -187,6 +199,13 @@
 /* Micrium: Micrium software products porting for RT-Thread */
 
 /* end of Micrium: Micrium software products porting for RT-Thread */
+#define PKG_USING_CHERRYUSB
+
+/* CherryUSB Options */
+
+#define PKG_CHERRYUSB_USING_FS
+/* end of CherryUSB Options */
+#define PKG_USING_CHERRYUSB_LATEST_VERSION
 /* end of system packages */
 
 /* peripheral libraries and drivers */
